@@ -88,6 +88,10 @@ body {
   row-gap: 9.6rem;
 }
 
+/* .grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+} */
+
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -193,6 +197,32 @@ body {
   border-bottom: 1px solid transparent;
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  height: 3rem;
+  width: 3rem;
+  color: var(--primary-color);
+}
+
+.underline {
+  display: inline-block;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color-shades-1);
+}
+
 /* HEALPER/SETTING CLASSES */
 .margin-right-sm {
   margin-right: 1.6rem !important;
@@ -200,6 +230,10 @@ body {
 
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-large {
+  margin-bottom: 9.6rem !important;
 }
 
 .center-text {
