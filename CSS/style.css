@@ -8,6 +8,7 @@
   --primary-color-tint-1: #f1f1ec;
   --primary-color-tint-2: #e3e4da;
   --primary-color-tint-3: #d4d6c7;
+  --primary-color-tint-4: #8d9269;
   --base-dark-grey-color: #080808;
   --white-color: #fff;
   --dark-white-color: #ddd;
@@ -15,6 +16,10 @@
   --tag-color-green: #51cf66;
   --tag-color-green-1: #94d82d;
   --tag-color-yellow: #ffd43b;
+
+  --dark-gradiant-color: rgba(113, 119, 68, 0.35);
+  --light-gradiant-color: rgba(141, 146, 105, 0.35);
+  --primary-color-transparent: rgba(241, 241, 236, 0.5);
 }
 
 /***************************/
@@ -477,4 +482,88 @@
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/***************************/
+/*** SECTION CTA ***/
+/***************************/
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-color-tint-4),
+    var(--primary-color)
+  );
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: var(--primary-color-shades-2);
+}
+
+.cta-text-box .heading-secondary {
+  color: var(--primary-color-shades-2);
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-from {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-from label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-from input,
+.cta-from select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: var(--primary-color-tint-1);
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-from input::placeholder {
+  color: var(--base-grey-color-light);
+}
+
+.cta-grid *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem var(--primary-color-transparent);
+}
+
+.cta-image-box {
+  background-image: linear-gradient(
+      to right bottom,
+      var(--light-gradiant-color),
+      var(--dark-gradiant-color)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }

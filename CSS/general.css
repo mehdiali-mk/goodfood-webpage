@@ -45,14 +45,36 @@ Default: 1
     --white-color: #fff; */
 
   /* --- Green Color Theme */
-  --primary-color: #717744;
+  /* --primary-color: #717744;
   --primary-color-shades-1: #5a5f36;
   --primary-color-shades-2: #373d20;
   --base-grey-color: #555;
   --primary-color-tint-1: #f1f1ec;
   --base-dark-grey-color: #080808;
   --white-color: #fff;
+  --dark-white-color: #ddd; */
+
+  /* New Colour Theme */
+  --primary-color: #717744;
+  --primary-color-shades-1: #5a5f36;
+  --primary-color-shades-2: #373d20;
+  --base-dark-grey-color: #333;
+  --base-grey-color: #555;
+  --base-grey-color-light: #777;
+  --primary-color-tint-1: #f1f1ec;
+  --primary-color-tint-2: #e3e4da;
+  --primary-color-tint-3: #d4d6c7;
+  --primary-color-tint-4: #8d9269;
+  --base-dark-grey-color: #080808;
+  --white-color: #fff;
   --dark-white-color: #ddd;
+
+  --tag-color-green: #51cf66;
+  --tag-color-green-1: #94d82d;
+  --tag-color-yellow: #ffd43b;
+
+  --dark-gradiant-color: rgba(113, 119, 68, 0.35);
+  --light-gradiant-color: rgba(141, 146, 105, 0.35);
 }
 
 html {
@@ -142,6 +164,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -150,6 +173,10 @@ body {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   font-weight: 600;
+
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
 
   /* transition: background-color 0.5s; */
   transition: all 0.5s;
@@ -178,6 +205,18 @@ body {
   background-color: var(--primary-color-tint-1);
 
   box-shadow: inset 0 0 0 3px var(--white-color);
+}
+
+.btn--form {
+  background-color: var(--primary-color-shades-2);
+  color: var(--primary-color-tint-1);
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: var(--primary-color-tint-1);
+  color: var(--primary-color-shades-2);
 }
 
 .link:link,
@@ -222,6 +261,11 @@ body {
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--primary-color-shades-1);
 }
+
+/* *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem var(--dark-gradiant-color);
+} */
 
 /* HEALPER/SETTING CLASSES */
 .margin-right-sm {
