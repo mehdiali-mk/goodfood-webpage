@@ -79,6 +79,7 @@ Default: 1
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 * {
@@ -92,6 +93,8 @@ body {
   font-weight: 400;
   line-height: 1;
   color: var(--base-grey-color);
+
+  overflow-x: hidden;
 }
 
 /***************************/
@@ -148,7 +151,7 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 8rem;
 }
 
 .heading-tertiary {
@@ -251,6 +254,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {

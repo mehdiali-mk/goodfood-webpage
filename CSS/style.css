@@ -34,6 +34,7 @@
 
   height: 6.4rem;
   padding: 0 3.2rem;
+  position: relative;
 }
 
 .main-logo {
@@ -47,7 +48,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -81,6 +82,25 @@
   cursor: pointer;
 }
 
+/* Mobile */
+
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--primary-color-shades-1);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 /***************************/
 /*** HERO SECTION ***/
 /***************************/
@@ -322,11 +342,14 @@
 .section-testimonials {
   background-color: var(--primary-color-tint-1);
   align-items: center;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
 
 .testimonials-container {
   /* padding: 9.6rem; */
-  padding: 6.4rem 0 2.4rem 9.6rem;
+  padding: 6.4rem 3.6rem 2.4rem 9.6rem;
   /* padding: 6.4rem;
   padding-bottom: 2.4rem;
   padding-right: 3.6rem;  
