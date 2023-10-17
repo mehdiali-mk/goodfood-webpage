@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta
+      name="description"
+      content="Goodfood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+
+    <link rel="icon" href="img/favicon-goodfood.png" />
+    <link rel="apple-touch-icon" href="img/favicon-goodfood-apple-touch.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,8 +32,13 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="JS/script.js"></script>
 
-    <title>Goodfood</title>
+    <title>Goodfood &mdash; Never cook again!</title>
   </head>
   <body>
     <header class="header">
@@ -65,10 +79,12 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating good!</a
             >
-            <a href="#" class="btn btn--outline">Learn More &darr;</a>
+            <a href="#how-it-works" class="btn btn--outline"
+              >Learn More &darr;</a
+            >
 
             <div class="delivered-meals">
               <div class="delivered-imgs">
@@ -85,8 +101,13 @@
             </div>
           </div>
           <div class="hero-img-box">
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+            </picture>
+
             <img
-              src="img/hero.png"
+              src="img/hero-min.png"
               alt="Woman eating food and meal."
               class="hero-img"
             />
@@ -301,8 +322,10 @@
         </div>
       </section>
 
+      <!-- Here it is for fixing the navigation of testimonial -->
+      <div id="testimonial" style="padding-bottom: 6.4rem"></div>
       <!-- Testimonial Section -->
-      <section class="section-testimonials" id="testimonial">
+      <section class="section-testimonials">
         <!-- Testimonial Customer Reviews -->
         <div class="testimonials-container">
           <span class="subheading underline">Testimonial</span>
@@ -549,7 +572,9 @@
         </div>
       </section>
 
-      <section class="section-cta" id="cta">
+      <!-- Here it is for fixing the navigation of CTA -->
+      <div id="cta" style="padding-bottom: 6.4rem"></div>
+      <section class="section-cta">
         <div class="container">
           <div class="cta-grid">
             <div class="cta-text-box">
@@ -636,7 +661,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2023 by Goodfood, Inc. All rights reserved.
+            Copyright &copy; <span class="year">3000</span> by Goodfood, Inc.
+            All rights reserved.
           </p>
         </div>
         <div class="address-col">
